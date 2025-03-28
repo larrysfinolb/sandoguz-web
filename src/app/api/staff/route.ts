@@ -1,9 +1,10 @@
+import type { IStaff } from "@/types/staff";
 import notion from "@/utils/notion";
 import { NextResponse } from "next/server";
 
 const DATABASE_ID = '1bc46e181f6e802d8861ff4370de62c5'
 
-function getValue (value: any) {
+function getValue(value: any) {
   return value ?? null;
 }
 
@@ -13,7 +14,7 @@ export async function GET() {
 
     const { results } = await notion.databases.query(query)
 
-    const staff = results.map((page: any) => {
+    const staff: IStaff[] = results.map((page: any) => {
       const { properties } = page
       const { id, imagen, nombre, departamento, cargo, educacion, correo, telefono } = properties
 

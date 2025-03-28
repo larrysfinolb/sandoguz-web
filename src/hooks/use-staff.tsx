@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import type { Staff } from "@/services/staff"
+import type { IStaff } from "@/types/staff"
 import { getStaff } from "@/services/staff"
 
 export const useStaff = () => {
-  const [staff, setStaff] = useState<Staff[]>([])
+  const [staff, setStaff] = useState<IStaff[]>([])
   const [loading, setLoading] = useState<boolean>(false)
   const [error, setError] = useState<Error | null>(null)
 
