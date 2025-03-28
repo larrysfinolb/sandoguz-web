@@ -167,7 +167,6 @@ export default function Home() {
                   <p className="text-gray-700">Fortalecimiento del sentido de pertenencia institucional</p>
                 </li>
               </ul>
-              <Button className="mt-6">Conoce Más</Button>
             </div>
           </div>
         </div>
@@ -183,9 +182,6 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
               <Link href="/acerca">Explorar Plataforma</Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-blue-700">
-              <Link href="/contacto">Contactar Soporte</Link>
             </Button>
           </div>
         </div>

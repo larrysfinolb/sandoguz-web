@@ -5,7 +5,7 @@ export function SiteFooter() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="flex flex-col md:flex-row justify-between">
           {/* Column 1 - About */}
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Colegio Santo Domingo de Guzmán</h3>
@@ -45,33 +45,6 @@ export function SiteFooter() {
               <li>
                 <Link href="/personal" className="hover:text-white">
                   Personal Académico
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 3 - Resources */}
-          <div>
-            <h3 className="text-white text-lg font-semibold mb-4">Recursos</h3>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <Link href="/noticias" className="hover:text-white">
-                  Noticias
-                </Link>
-              </li>
-              <li>
-                <Link href="/eventos" className="hover:text-white">
-                  Eventos
-                </Link>
-              </li>
-              <li>
-                <Link href="/galeria" className="hover:text-white">
-                  Galería
-                </Link>
-              </li>
-              <li>
-                <Link href="/documentos" className="hover:text-white">
-                  Documentos
                 </Link>
               </li>
             </ul>
